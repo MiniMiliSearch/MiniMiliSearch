@@ -218,27 +218,34 @@ function searchStacks() {
         return;
     }
 
-    stacks.forEach(stack => {
+    // 🔹 Step 1: Check only titles first
+    for (let stack of stacks) {
         let title = stack.querySelector(".stack-title").textContent.toLowerCase();
-        let content = stack.cloneNode(true); 
+        if (title.includes(query)) {
+            highlightAndScroll(stack);
+            return; // ✅ Stops search after finding title match
+        }
+    }
+
+    // 🔹 Step 2: If no title match, check keywords & content
+    for (let stack of stacks) {
+        let content = stack.cloneNode(true);
         let links = content.querySelectorAll("a");
 
         // Remove <a> text from content before searching
         links.forEach(link => link.textContent = "");
 
-        let textContent = content.textContent.toLowerCase(); // Get modified text
+        let textContent = content.textContent.toLowerCase();
         let keywords = stack.getAttribute("data-keywords") ? stack.getAttribute("data-keywords").toLowerCase() : "";
 
-        // Check if query matches title, content (without <a> text), or hidden keywords
-        if (title.includes(query) || textContent.includes(query) || keywords.includes(query)) {
+        if (textContent.includes(query) || keywords.includes(query)) {
             highlightAndScroll(stack);
-            found = true;
+            return; // ✅ Stops search after finding a match
         }
-    });
-
-    if (!found) {
-        alert("No matching AI stack found.");
     }
+
+    // 🔹 Step 3: If no match at all, show an alert
+    alert("No matching AI stack found.");
 }
 
 function highlightAndScroll(stack) {
