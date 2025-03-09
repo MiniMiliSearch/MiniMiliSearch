@@ -259,3 +259,19 @@ body {
 .search-container {
     margin-top: 20px; /* Adds space below the CTA */
 }
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #f1f1f1;
+    font-size: 1rem;
+    color: #333;
+    margin-top: 40px;
+}
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer a:hover {
+    color: #0056b3;
+}
