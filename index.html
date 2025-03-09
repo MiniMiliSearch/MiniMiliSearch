@@ -40,7 +40,7 @@
 
     <!-- AI Stack Section -->
     <section id="ai-stack" class="ai-stack">        
-    <div class="stack-box">
+    <div class="stack-box">        
     <h3 class="stack-title">Clipping Streams Stack (YouTube, TikTok, etc.)</h3>
 
     <p class="stack-heading"><strong>Clipping:</strong></p>
@@ -58,6 +58,7 @@
         <a href="https://later.com/" target="_blank">Later</a>,  
         <a href="https://pallyy.com/" target="_blank">Pallyy</a><span class="sub-desc"> (Automated scheduling & publishing)</span>
     </p>
+    
 </div>
 
 <div class="stack-box">
@@ -169,31 +170,80 @@
         <a href="https://www.biginterview.com/" target="_blank">Big Interview</a><span class="sub-desc"> (Mock AI interview & real-time feedback)</span>
     </p>
 </div>
+<div class="stack-box">
+    <h3 class="stack-title">AI Image Generator</h3>
+
+    <p class="stack-heading"><strong>From Image:</strong></p>
+    <p>
+        <a href="https://www.artbreeder.com/" target="_blank">Artbreeder</a>,  
+        <a href="https://runwayml.com/" target="_blank">RunwayML</a>
+        <span class="sub-desc"> (Generate & edit images using AI tools.)</span>
+    </p>
+
+    <p class="stack-heading"><strong>From Text:</strong></p>
+    <p>
+        <a href="https://deepai.org/machine-learning-model/text2img" target="_blank">DeepAI</a>,  
+        <a href="https://ideogram.ai/" target="_blank">Ideogram</a>
+        <span class="sub-desc"> (Convert text prompts into AI-generated images.)</span>
+    </p>
+</div>
+
+<div class="stack-box">
+    <h3 class="stack-title">AI Voice Stack</h3>
+
+    <p class="stack-heading"><strong>Voice Maker:</strong></p>
+    <p>
+        <a href="https://ttsmp3.com/" target="_blank">TTSMP3</a>,  
+        <a href="https://www.fakeyou.com/" target="_blank">FakeYou</a>
+        <span class="sub-desc"> (Generate voice from text by AI tools.)</span>
+    </p>
+
+    <p class="stack-heading"><strong>Auto Subtitles:</strong></p>
+    <p>
+        <a href="https://www.capcut.com/" target="_blank">CapCut</a>,  
+        <a href="https://www.veed.io/" target="_blank">Veed.io</a>
+        <span class="sub-desc"> (AI generated subtitles.)</span>
+    </p>
+</div>
     </section>
     <script>
 function searchStacks() {
-    let query = document.getElementById("search-input").value.toLowerCase();
+    let query = document.getElementById("search-input").value.trim().toLowerCase();
     let stacks = document.querySelectorAll(".stack-box");
+    let found = false;
 
-    for (let stack of stacks) {
-        let title = stack.querySelector(".stack-title").textContent.toLowerCase();
-        let headings = stack.querySelectorAll(".stack-heading");
-        let found = title.includes(query);
-
-        // Check headings inside the stack
-        for (let heading of headings) {
-            if (heading.textContent.toLowerCase().includes(query)) {
-                found = true;
-            }
-        }
-
-        if (found) {
-            stack.scrollIntoView({ behavior: "smooth", block: "start" });
-            stack.style.border = "2px solid #007BFF"; // Highlight searched stack
-            setTimeout(() => stack.style.border = "", 4000); // Remove highlight after 2s
-            break;
-        }
+    if (query === "") {
+        alert("Please enter a search term.");
+        return;
     }
+
+    stacks.forEach(stack => {
+        let title = stack.querySelector(".stack-title").textContent.toLowerCase();
+        let content = stack.cloneNode(true); 
+        let links = content.querySelectorAll("a");
+
+        // Remove <a> text from content before searching
+        links.forEach(link => link.textContent = "");
+
+        let textContent = content.textContent.toLowerCase(); // Get modified text
+        let keywords = stack.getAttribute("data-keywords") ? stack.getAttribute("data-keywords").toLowerCase() : "";
+
+        // Check if query matches title, content (without <a> text), or hidden keywords
+        if (title.includes(query) || textContent.includes(query) || keywords.includes(query)) {
+            highlightAndScroll(stack);
+            found = true;
+        }
+    });
+
+    if (!found) {
+        alert("No matching AI stack found.");
+    }
+}
+
+function highlightAndScroll(stack) {
+    stack.scrollIntoView({ behavior: "smooth", block: "start" });
+    stack.style.border = "2px solid #007BFF"; 
+    setTimeout(() => stack.style.border = "", 4000);
 }
 </script>
 </body>
