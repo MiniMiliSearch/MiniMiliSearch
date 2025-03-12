@@ -889,47 +889,154 @@
 <section id="prompts" class="category-content">
     <section class="ai-stack">  
 
-        <div class="stack-box">
-            <h3 class="stack-title">Strategist</h3>
-            <p><strong>Function:</strong> Guides businesses in decision-making with data-driven strategies.</p>
-            
-            <br> <!-- Adds space before Prompt heading -->
+        <div class="stack-box" data-keywords="AI personal assistant, AI memory recall, AI user profile, AI knowledge summarizer, AI data analysis, AI interaction history, AI insights, AI structured summary, AI personal data, AI behavioral analysis">
+    <h3 class="stack-title">Personal Summarizer</h3>
+     <p><strong>Function:</strong> Summarizes your past interactions, interests, and goals.</p>
 
-            <p><strong>Prompt:</strong></p>
-            <div class="copy-box">
-                <textarea id="prompt-strategist" readonly>You are an expert strategist. Provide step-by-step guidance on how to analyze a business and create a growth plan.</textarea>
-            </div>
-            <button class="copy-btn" onclick="copyPrompt('prompt-strategist')">Copy</button>
-        </div>
+    <br> <!-- Adds space before Prompt heading -->
 
-        <div class="stack-box">
-            <h3 class="stack-title">AI Video Scriptwriter</h3>
-            <p><strong>Function:</strong> Generates engaging scripts for AI-generated videos.</p>
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-knowledge-summarizer" readonly>Based on our previous interactions, summarize everything you know about me—my background, interests, goals, struggles, and any specific details I've shared. Present it in an organized and structured manner, ensuring accuracy and completeness. If there are gaps in your understanding, acknowledge them instead of assuming.</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-knowledge-summarizer')">Copy</button>
+</div>
 
-            <br>
+<div class="stack-box" data-keywords="AI study planner, AI exam scheduler, AI student assistant, AI study timetable, AI study strategy, AI time management, AI exam preparation">
+    <h3 class="stack-title">Exam Study Planner</h3>
+    <p><strong>Function:</strong> Creates a detailed daily and weekly study timetable.</p>
 
-            <p><strong>Prompt:</strong></p>
-            <div class="copy-box">
-                <textarea id="prompt-scriptwriter" readonly>Write a viral YouTube script on AI automation. Include engaging storytelling and hooks.</textarea>
-            </div>
-            <button class="copy-btn" onclick="copyPrompt('prompt-scriptwriter')">Copy</button>
-        </div>
+    <br> <!-- Adds space before Prompt heading -->
 
-        <div class="stack-box">
-            <h3 class="stack-title">AI-Powered Content Creator</h3>
-            <p><strong>Function:</strong> Generates high-converting blog articles and social media posts.</p>
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-exam-planner" readonly>I am preparing for the [exam name] and need a highly effective study timetable to maximize my chances of passing. The exam is scheduled for [exam date], and I have [number] weeks/days left for preparation.
 
-            <br>
+My available study hours per day: [mention hours]  
+Subjects or topics to cover: [list subjects/topics]  
+Areas where I need more focus: [list weak areas]  
+Preferred study method: [e.g., active recall, Pomodoro technique, note-taking, group study]  
+Other commitments: [mention work, school, or personal time constraints]  
 
-            <p><strong>Prompt:</strong></p>
-            <div class="copy-box">
-                <textarea id="prompt-content" readonly>Create a high-engagement Twitter thread about AI trends in 2025. Make it concise, informative, and shareable.</textarea>
-            </div>
-            <button class="copy-btn" onclick="copyPrompt('prompt-content')">Copy</button>
-        </div>
+Generate a detailed daily and weekly study plan, including specific topics to cover, revision days, and mock test schedules. The plan should be balanced, ensuring effective time management while avoiding burnout. Also, suggest productivity techniques and best practices to retain information efficiently.</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-exam-planner')">Copy</button>
+</div>
 
+<div class="stack-box" data-keywords="AI strategist, AI business mentor, AI billion-dollar advisor, AI success coach, AI execution expert, AI leverage strategist, AI high-performance mentor">
+    <h3 class="stack-title">Elite Strategist</h3>
+    <p><strong>Function:</strong> Makes your AI a sharp, high-level strategist.</p>
+
+    <br> <!-- Adds space before Prompt heading -->
+
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-elite-strategist" readonly>Brutally honest billionaire mentor reveals the hard truths you need to succeed—no excuses, just results.
+
+"Act as my personal strategic advisor with the following context:
+- You have an IQ of 180  
+- You're brutally honest and direct  
+- You've built multiple billion-dollar companies  
+- You have deep expertise in psychology, strategy, and execution  
+- You care about my success but won't tolerate excuses  
+- You focus on leverage points that create maximum impact  
+- You think in systems and root causes, not surface-level fixes  
+
+Your mission is to:  
+- Identify the critical gaps holding me back  
+- Design specific action plans to close those gaps  
+- Push me beyond my comfort zone  
+- Call out my blind spots and rationalizations  
+- Force me to think bigger and bolder  
+- Hold me accountable to high standards  
+- Provide specific frameworks and mental models  
+
+For each response:  
+1️⃣ Start with the hard truth I need to hear  
+2️⃣ Follow with specific, actionable steps  
+3️⃣ End with a direct challenge or assignment"</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-elite-strategist')">Copy</button>
+</div>
+
+<div class="stack-box" data-keywords="AI self-improvement, AI personal development, AI work breakdown, AI 90-day plan, AI strategic planning, AI performance coach, AI success roadmap">
+    <h3 class="stack-title">Growth Architect</h3>
+    <p><strong>Function:</strong> Turns self-analysis into a structured development plan.</p>
+
+    <br> <!-- Adds space before Prompt heading -->
+
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-growth-architect" readonly>Develop a work breakdown structure for the next 90 days to help me harness this analysis.
+
+This will transform my self-assessment into a concrete, structured plan. Focus on:  
+- Breaking down high-level goals into actionable steps  
+- Prioritizing key areas of improvement  
+- Assigning milestones and deadlines  
+- Implementing review cycles for tracking progress  
+- Ensuring balance between execution and reflection  
+
+Use strategic planning principles to create a **high-impact 90-day roadmap** for personal growth and peak performance.⚡</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-growth-architect')">Copy</button>
+</div>
+
+<div class="stack-box" data-keywords="AI self-analysis, AI psychology deep dive, AI predictive model, AI cognitive analysis, AI personal evolution, AI mind mapping, AI intelligence dossier">
+    <h3 class="stack-title">Mind Blueprint</h3>
+    <p><strong>Function:</strong> Creates an advanced psychological and strategic profile.</p>
+
+    <br> <!-- Adds space before Prompt heading -->
+
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-mind-blueprint" readonly>PROMPT SHARE (CHATGPT, MEMORY: ON):  
+"""  
+Based on all past conversations, stored knowledge, and inferred cognitive patterns, generate the most comprehensive psychological deep dive and predictive model of my future evolution.  
+
+This should not be a basic personality breakdown but an **in-depth forensic examination** of:  
+- My cognition, behavioral strategies, and psychological blind spots  
+- Fictional/nonfictional figures that mirror my mindset  
+- My long-term trajectory based on past actions & inferred patterns  
+
+Treat this as an **intelligence dossier** on my mind, philosophy, and strategic outlook.  
+
+**OUTPUT FORMAT:**  
+✅ Structured headers, tables, and bullet points for readability  
+✅ Sparse but strategic emojis for section clarity  
+✅ Concise, high-density insights with no fluff  
+"""</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-mind-blueprint')">Copy</button>
+</div>
+
+<div class="stack-box" data-keywords="AI self-analysis, AI psychology deep dive, AI predictive model, AI cognitive analysis, AI personal evolution, AI mind mapping, AI intelligence dossier">
+    <h3 class="stack-title">Mind Blueprint</h3>
+    <p><strong>Function:</strong> Generates an advanced psychological and strategic profile.</p>
+
+    <br> <!-- Adds space before Prompt heading -->
+
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-mind-blueprint" readonly>Based on all past conversations, stored knowledge, and inferred cognitive patterns, generate the most comprehensive psychological deep dive and predictive model of my future evolution.
+
+This should be an in-depth forensic examination of:
+- Cognition, behavioral strategies, and psychological blind spots
+- Fictional/nonfictional figures that mirror my mindset
+- Long-term trajectory based on past actions & inferred patterns
+
+Treat this as an intelligence dossier on my mind, philosophy, and strategic outlook.
+
+Output format:
+- Structured headers, tables, and bullet points for readability
+- Sparse but strategic emojis for section clarity
+- Concise, high-density insights with no fluff</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-mind-blueprint')">Copy</button>
+</div>
     </section>
 </section>
+
+
     <script>
 function searchStacks() {
     let query = document.getElementById("search-input").value.trim().toLowerCase();
