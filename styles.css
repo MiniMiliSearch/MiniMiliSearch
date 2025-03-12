@@ -275,3 +275,82 @@ body {
 .footer a:hover {
     color: #0056b3;
 }
+/* Category Navigation */
+.category-nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.tab-btn.active {
+    background: #007BFF;
+    color: white;
+}
+
+/* Category Content - Initially Hidden */
+.category-content {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Show Default Active Content */
+.category-content.active {
+    display: block;
+}
+/* Copy Box Styling */
+.copy-box {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Ensures Text Stays Inside the Box and Allows Line Breaks */
+.copy-box textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    padding: 8px;
+    color: #333;
+    outline: none;
+    resize: none;  /* Prevents resizing */
+    height: 100px;  /* Increased height for better readability */
+    overflow-y: auto;  /* Enables scrolling if needed */
+    white-space: pre-wrap; /* Ensures text wraps properly */
+    word-wrap: break-word; /* Breaks long words */
+}
+
+/* Copy Button */
+.copy-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    display: block; /* Places it below the copy box */
+    margin: 10px auto 0; /* Centers it and adds spacing */
+    width: 100px; /* Fixed width for consistency */
+    text-align: center;
+}
+
+.copy-btn:hover {
+    background: #0056b3;
+}
