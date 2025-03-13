@@ -1257,14 +1257,19 @@ function copyPrompt(id) {
     setTimeout(() => button.innerText = "Copy", 1500);
 }
 
-
 function scrollToCategories(event) {
     event.preventDefault(); // Prevent default anchor behavior
-    document.querySelector('.category-nav').scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+    
+    let categorySection = document.querySelector('.category-nav'); // Target category buttons
+    let offset = -80; // Adjust this value for proper spacing
+    
+    window.scrollTo({
+        top: categorySection.offsetTop + offset,
+        behavior: "smooth"
     });
 }
+
+
 </script>
 <footer class="footer">
     <p>Made by <strong>Ayush Thakur</strong></p>
