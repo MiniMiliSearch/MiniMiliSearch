@@ -16,7 +16,7 @@
     <meta name="algolia-site-verification" content="3FDE0968A4763824" />
     
     <!-- SEO Meta Tags -->
-    <title>MiniMili AI – The Ultimate AI Tool Finder</title>
+    <title>MiniMili Search</title>
     <meta name="description" content="Find the best AI tools instantly. MiniMili AI helps you discover AI-powered apps, prompts, and automation tools in seconds. Save time and boost productivity.">
     <meta name="keywords" content="AI tools, AI search, AI automation, best AI websites, AI prompts, AI productivity, AI software, AI tech, AI applications">
     <meta name="author" content="MiniMili AI">
@@ -49,7 +49,7 @@
     <header>
     <nav class="navbar">
         <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search MiniMili">
+            <input type="text" id="search-input" placeholder="Search by Category, Not Tool Name"                        >
             <button onclick="searchStacks()" class="search-btn">Go</button>
         </div>
     </nav>
@@ -664,251 +664,718 @@
     <section class="ai-stack">  
 
         <div class="stack-box" data-keywords="AI image generator, text to image, AI artwork, AI picture maker, AI photo enhancement, digital art AI, AI design tools, AI-generated visuals">
-            <h3 class="stack-title">Image Generator</h3>
-            <p><strong>Tool:</strong> <a href="https://ideogram.ai/" target="_blank">Ideogram</a></p>
-            <p><strong>Function:</strong> AI-powered image generation from text prompts.</p>
-        </div>
+    <h3 class="stack-title">Image Generator</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://ideogram.ai/" target="_blank">Ideogram</a>,  
+        <a href="https://openai.com/dall-e" target="_blank">DALL·E</a>,  
+        <a href="https://stablediffusionweb.com/" target="_blank">Stable Diffusion</a>  
+        <span id="extra-image-tools" class="extra-tools">
+            , <a href="https://www.midjourney.com/" target="_blank">MidJourney</a>,  
+            <a href="https://runwayml.com/" target="_blank">RunwayML</a>,  
+            <a href="https://deepdreamgenerator.com/" target="_blank">Deep Dream Generator</a>,  
+            <a href="https://artbreeder.com/" target="_blank">Artbreeder</a>,  
+            <a href="https://playgroundai.com/" target="_blank">Playground AI</a>
+        </span>
+    </p>
+    <span id="btn-extra-image-tools" class="see-more" onclick="toggleTools('extra-image-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> AI-powered image generation from text prompts.</p>
+</div>
 
         <div class="stack-box" data-keywords="AI video generator, AI motion graphics, AI filmmaking, video creation AI, AI video automation, AI animation, AI content creation">
-            <h3 class="stack-title">AI Video Generator</h3>
-            <p><strong>Tool:</strong> <a href="https://runwayml.com/" target="_blank">RunwayML</a></p>
-            <p><strong>Function:</strong> Create AI-generated videos and motion graphics.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI voice generator, text to speech, AI speech synthesis, AI voice cloning, AI voiceover, AI text to sound, AI audio generator, synthetic speech">
-            <h3 class="stack-title">Text-to-Speech Converter</h3>
-            <p><strong>Tool:</strong> <a href="https://elevenlabs.io/" target="_blank">ElevenLabs</a></p>
-            <p><strong>Function:</strong> Generate ultra-realistic AI voices for narration.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI writing, AI content creator, AI copywriting, AI blog writer, AI article generator, marketing AI, AI text generator, AI sales copy">
-            <h3 class="stack-title">AI Writing Assistant</h3>
-            <p><strong>Tool:</strong> <a href="https://www.copy.ai/" target="_blank">Copy AI</a></p>
-            <p><strong>Function:</strong> Generate high-quality marketing copy and content.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI code generator, AI coding assistant, AI software development, AI bug fixer, AI programming, AI developer tool, AI script writer">
-            <h3 class="stack-title">AI Code Generator</h3>
-            <p><strong>Tool:</strong> <a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a></p>
-            <p><strong>Function:</strong> Auto-completes and suggests code using AI.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI chatbot, AI assistant, conversational AI, AI customer support, AI virtual assistant, AI bot, AI helpdesk, AI question answering">
-            <h3 class="stack-title">AI Chatbot</h3>
-            <p><strong>Tool:</strong> <a href="https://chat.openai.com/" target="_blank">ChatGPT</a></p>
-            <p><strong>Function:</strong> AI chatbot for conversations, research, and writing.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI email personalization, AI cold email, AI email writing, AI email outreach, AI email automation, AI lead generation, AI email assistant">
-            <h3 class="stack-title">AI Email Personalization</h3>
-            <p><strong>Tool:</strong> <a href="https://www.smartwriter.ai/" target="_blank">SmartWriter AI</a></p>
-            <p><strong>Function:</strong> Personalize cold emails with AI-driven outreach.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI resume, AI job application, AI CV builder, AI resume writer, AI ATS resume, AI career tools, AI resume enhancement">
-            <h3 class="stack-title">AI Resume Builder</h3>
-            <p><strong>Tool:</strong> <a href="https://www.novoresume.com/" target="_blank">Novoresume</a></p>
-            <p><strong>Function:</strong> AI-powered resume formatting and templates.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI cover letter, AI job application, AI career tools, AI job hunt, AI employment tools, AI job support, AI resume tools">
-            <h3 class="stack-title">AI Cover Letter Generator</h3>
-            <p><strong>Tool:</strong> <a href="https://www.tealhq.com/" target="_blank">Teal</a></p>
-            <p><strong>Function:</strong> Generates personalized cover letters quickly.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI job tracking, AI job organizer, AI interview scheduler, AI employment tracker, AI career tools, job search AI">
-            <h3 class="stack-title">AI Job Application Tracker</h3>
-            <p><strong>Tool:</strong> <a href="https://huntr.co/" target="_blank">Huntr</a></p>
-            <p><strong>Function:</strong> Organizes applications and interview schedules.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI video editing, AI podcast editor, AI media editor, AI clip enhancer, AI film editing, AI video automation, AI content creator">
-            <h3 class="stack-title">AI Video Editing</h3>
-            <p><strong>Tool:</strong> <a href="https://www.descript.com/" target="_blank">Descript</a></p>
-            <p><strong>Function:</strong> AI-powered video and podcast editing.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI music generator, AI soundtrack, AI beat maker, AI song creation, AI background music, AI royalty-free music, AI audio composition">
-            <h3 class="stack-title">AI Background Music Generator</h3>
-            <p><strong>Tool:</strong> <a href="https://soundraw.io/" target="_blank">Soundraw</a></p>
-            <p><strong>Function:</strong> AI-generated background music and sound effects.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI email marketing, AI sales email, AI email conversion, AI lead nurturing, AI cold outreach, AI automated emails, AI email copy">
-            <h3 class="stack-title">AI Sales Email Optimization</h3>
-            <p><strong>Tool:</strong> <a href="https://www.lemlist.com/" target="_blank">Lemlist</a></p>
-            <p><strong>Function:</strong> AI-driven email deliverability and automation.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI branding, AI logo design, AI business identity, AI brand builder, AI graphic design, AI creative tools, AI logo automation">
-            <h3 class="stack-title">AI Logo Generator</h3>
-            <p><strong>Tool:</strong> <a href="https://looka.com/" target="_blank">Looka</a></p>
-            <p><strong>Function:</strong> AI-based logo design and branding.</p>
-        </div>
-
-        <div class="stack-box" data-keywords="AI SEO optimization, AI content ranking, AI website traffic, AI search engine ranking, AI marketing optimization, AI blog ranking">
-            <h3 class="stack-title">AI SEO Optimization</h3>
-            <p><strong>Tool:</strong> <a href="https://www.surferseo.com/" target="_blank">Surfer SEO</a></p>
-            <p><strong>Function:</strong> AI-powered content optimization for SEO.</p>
-        </div>
-<div class="stack-box" data-keywords="AI image enhancement, photo upscaling, AI resolution booster, AI photo editing, AI picture improvement, AI sharpening, AI clear image">
-    <h3 class="stack-title">AI Image Upscaler</h3>
-    <p><strong>Tool:</strong> <a href="https://letsenhance.io/" target="_blank">Let's Enhance</a></p>
-    <p><strong>Function:</strong> Enhance image resolution without losing quality.</p>
+    <h3 class="stack-title">AI Video Generator</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://runwayml.com/" target="_blank">RunwayML</a>,  
+        <a href="https://www.synthesia.io/" target="_blank">Synthesia</a>,  
+        <a href="https://pika.art/" target="_blank">Pika Labs</a>  
+        <span id="extra-video-tools" class="extra-tools">
+            , <a href="https://www.heygen.com/" target="_blank">HeyGen</a>,  
+            <a href="https://deepbrain.io/" target="_blank">DeepBrain AI</a>,  
+            <a href="https://kaiber.ai/" target="_blank">Kaiber</a>,  
+            <a href="https://veed.io/tools/ai-video-generator" target="_blank">Veed.io</a>,  
+            <a href="https://www.descript.com/" target="_blank">Descript</a>
+        </span>
+    </p>
+    <span id="btn-extra-video-tools" class="see-more" onclick="toggleTools('extra-video-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> Create AI-generated videos and motion graphics.</p>
 </div>
 
-<div class="stack-box" data-keywords="AI email spam checker, email deliverability AI, spam filter AI, AI inbox assistant, email quality checker, AI anti-spam">
-    <h3 class="stack-title">AI Email Spam Checker</h3>
-    <p><strong>Tool:</strong> <a href="https://mailmeteor.com/" target="_blank">Mailmeteor</a></p>
-    <p><strong>Function:</strong> AI-based email deliverability optimization.</p>
+<div class="stack-box" data-keywords="AI voice generator, text to speech, AI speech synthesis, AI voice cloning, AI voiceover, AI text to sound, AI audio generator, synthetic speech">
+    <h3 class="stack-title">Text-to-Speech Converter</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://elevenlabs.io/" target="_blank">ElevenLabs</a>,  
+        <a href="https://play.ht/" target="_blank">Play.ht</a>,  
+        <a href="https://www.naturalreaders.com/" target="_blank">NaturalReaders</a>  
+        <span id="extra-tts-tools" class="extra-tools">
+            , <a href="https://www.resemble.ai/" target="_blank">Resemble AI</a>,  
+            <a href="https://www.murf.ai/" target="_blank">Murf AI</a>,  
+            <a href="https://www.listnr.tech/" target="_blank">Listnr</a>,  
+            <a href="https://coqui.ai/" target="_blank">Coqui AI</a>,  
+            <a href="https://voicemaker.in/" target="_blank">Voicemaker</a>
+        </span>
+    </p>
+    <span id="btn-extra-tts-tools" class="see-more" onclick="toggleTools('extra-tts-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> Generate ultra-realistic AI voices for narration.</p>
 </div>
 
-<div class="stack-box" data-keywords="AI job resume checker, AI ATS optimizer, resume improvement AI, job application AI, career AI, AI resume formatting">
-    <h3 class="stack-title">AI Resume ATS Checker</h3>
-    <p><strong>Tool:</strong> <a href="https://resumeworded.com/" target="_blank">Resume Worded</a></p>
-    <p><strong>Function:</strong> AI-powered resume optimization for ATS.</p>
+<div class="stack-box" data-keywords="AI writing, AI content creator, AI copywriting, AI blog writer, AI article generator, marketing AI, AI text generator, AI sales copy">
+    <h3 class="stack-title">AI Writing Assistant</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.copy.ai/" target="_blank">Copy AI</a>,  
+        <a href="https://www.jasper.ai/" target="_blank">Jasper AI</a>,  
+        <a href="https://writesonic.com/" target="_blank">Writesonic</a>  
+        <span id="extra-writing-tools" class="extra-tools">
+            , <a href="https://www.rytr.me/" target="_blank">Rytr</a>,  
+            <a href="https://quillbot.com/" target="_blank">QuillBot</a>,  
+            <a href="https://inkforall.com/" target="_blank">INK AI</a>,  
+            <a href="https://www.sudowrite.com/" target="_blank">Sudowrite</a>,  
+            <a href="https://hypotenuse.ai/" target="_blank">Hypotenuse AI</a>
+        </span>
+    </p>
+    <span id="btn-extra-writing-tools" class="see-more" onclick="toggleTools('extra-writing-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> Generate high-quality marketing copy and content.</p>
 </div>
 
+<div class="stack-box" data-keywords="AI code generator, AI coding assistant, AI software development, AI bug fixer, AI programming, AI developer tool, AI script writer">
+    <h3 class="stack-title">AI Code Generator</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://github.com/features/copilot" target="_blank">GitHub Copilot</a>,  
+        <a href="https://codeium.com/" target="_blank">Codeium</a>,  
+        <a href="https://www.tabnine.com/" target="_blank">Tabnine</a>  
+        <span id="extra-code-tools" class="extra-tools">
+            , <a href="https://replit.com/site/ghostwriter" target="_blank">Replit Ghostwriter</a>,  
+            <a href="https://sourcegraph.com/cody" target="_blank">Cody by Sourcegraph</a>,  
+            <a href="https://blackbox.ai/" target="_blank">Blackbox AI</a>,  
+            <a href="https://aihelperbot.com/" target="_blank">AI Helper Bot</a>,  
+            <a href="https://www.autoregex.com/" target="_blank">AutoRegex</a>
+        </span>
+    </p>
+    <span id="btn-extra-code-tools" class="see-more" onclick="toggleTools('extra-code-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> Auto-completes and suggests code using AI.</p>
+</div>
+
+<div class="stack-box" data-keywords="AI chatbot, AI assistant, conversational AI, AI customer support, AI virtual assistant, AI bot, AI helpdesk, AI question answering">
+    <h3 class="stack-title">AI Chatbot</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>,  
+        <a href="https://claude.ai/" target="_blank">Claude AI</a>,  
+        <a href="https://bard.google.com/" target="_blank">Google Gemini (formerly Bard)</a>  
+        <span id="extra-chatbot-tools" class="extra-tools">
+            , <a href="https://www.perplexity.ai/" target="_blank">Perplexity AI</a>,  
+            <a href="https://character.ai/" target="_blank">Character AI</a>,  
+            <a href="https://forefront.ai/" target="_blank">Forefront AI</a>,  
+            <a href="https://poe.com/" target="_blank">Poe AI</a>,  
+            <a href="https://www.you.com/" target="_blank">YouChat</a>
+        </span>
+    </p>
+    <span id="btn-extra-chatbot-tools" class="see-more" onclick="toggleTools('extra-chatbot-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> AI chatbot for conversations, research, and writing.</p>
+</div>
+
+        <!-- AI Email Personalization -->
+<div class="stack-box" data-keywords="AI email personalization, AI cold email, AI email writing, AI email outreach, AI email automation, AI lead generation, AI email assistant">
+    <h3 class="stack-title">AI Email Personalization</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.smartwriter.ai/" target="_blank">SmartWriter AI</a>,  
+        <a href="https://www.woodpecker.co/" target="_blank">Woodpecker</a>,  
+        <a href="https://www.mailmeteor.com/" target="_blank">Mailmeteor</a>  
+        <span id="extra-email-tools" class="extra-tools" style="display: none;">
+            , <a href="https://instantly.ai/" target="_blank">Instantly AI</a>,  
+            <a href="https://lyne.ai/" target="_blank">Lyne AI</a>,  
+            <a href="https://closerscopy.com/" target="_blank">ClosersCopy</a>,  
+            <a href="https://dripify.io/" target="_blank">Dripify</a>,  
+            <a href="https://saleshandy.com/" target="_blank">SalesHandy</a>,  
+            <a href="https://gmass.co/" target="_blank">GMass</a>  
+        </span>
+    </p>
+    <span id="btn-extra-email-tools" class="see-more" onclick="toggleTools('extra-email-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> Personalize cold emails with AI-driven outreach.</p>
+</div>
+
+<!-- AI Resume Builder -->
+<div class="stack-box" data-keywords="AI resume, AI job application, AI CV builder, AI resume writer, AI ATS resume, AI career tools, AI resume enhancement">
+    <h3 class="stack-title">AI Resume Builder</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.novoresume.com/" target="_blank">Novoresume</a>,  
+        <a href="https://www.resumeworded.com/" target="_blank">Resume Worded</a>,  
+        <a href="https://www.zety.com/resume-builder" target="_blank">Zety</a>  
+        <span id="extra-resume-tools" class="extra-tools" style="display: none;">
+            , <a href="https://enhancv.com/" target="_blank">Enhancv</a>,  
+            <a href="https://resumegenius.com/" target="_blank">Resume Genius</a>,  
+            <a href="https://www.canva.com/resumes/templates/" target="_blank">Canva Resume Builder</a>,  
+            <a href="https://resumake.io/" target="_blank">Resumake</a>,  
+            <a href="https://kickresume.com/" target="_blank">Kickresume</a>,  
+            <a href="https://cvwizard.com/" target="_blank">CV Wizard</a>
+        </span>
+    </p>
+    <span id="btn-extra-resume-tools" class="see-more" onclick="toggleTools('extra-resume-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> AI-powered resume formatting and templates.</p>
+</div>
+
+<!-- AI Cover Letter Generator -->
+<div class="stack-box" data-keywords="AI cover letter, AI job application, AI career tools, AI job hunt, AI employment tools, AI job support, AI resume tools">
+    <h3 class="stack-title">AI Cover Letter Generator</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.tealhq.com/" target="_blank">Teal</a>,  
+        <a href="https://www.kickresume.com/" target="_blank">Kickresume</a>,  
+        <a href="https://resumeworded.com/" target="_blank">Resume Worded</a>  
+        <span id="extra-cover-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.canva.com/resumes/templates/" target="_blank">Canva Cover Letters</a>,  
+            <a href="https://zety.com/cover-letter" target="_blank">Zety</a>,  
+            <a href="https://www.livecareer.com/cover-letter/examples" target="_blank">LiveCareer</a>,  
+            <a href="https://enhancv.com/cover-letter/" target="_blank">Enhancv</a>,  
+            <a href="https://resumegenius.com/cover-letter/" target="_blank">Resume Genius</a>
+        </span>
+    </p>
+    <span id="btn-extra-cover-tools" class="see-more" onclick="toggleTools('extra-cover-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> Generates personalized cover letters quickly.</p>
+</div>
+
+<!-- AI Video Editing -->
+<div class="stack-box" data-keywords="AI video editing, AI podcast editor, AI media editor, AI clip enhancer, AI film editing, AI video automation, AI content creator">
+    <h3 class="stack-title">AI Video Editing</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.descript.com/" target="_blank">Descript</a>,  
+        <a href="https://www.capcut.com/" target="_blank">CapCut AI</a>,  
+        <a href="https://www.adobe.com/sensei.html" target="_blank">Adobe Sensei</a>  
+        <span id="extra-editing-tools" class="extra-tools" style="display: none;">
+            , <a href="https://runwayml.com/" target="_blank">Runway ML</a>,  
+            <a href="https://pika.art/" target="_blank">Pika Labs</a>,  
+            <a href="https://veed.io/tools/ai-video-generator" target="_blank">Veed.io</a>,  
+            <a href="https://wisecut.video/" target="_blank">Wisecut</a>,  
+            <a href="https://www.magisto.com/" target="_blank">Magisto</a>,  
+            <a href="https://www.animoto.com/" target="_blank">Animoto</a>
+        </span>
+    </p>
+    <span id="btn-extra-editing-tools" class="see-more" onclick="toggleTools('extra-editing-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> AI-powered video and podcast editing.</p>
+</div>
+
+<!-- AI Background Music Generator -->
+<div class="stack-box" data-keywords="AI music generator, AI soundtrack, AI beat maker, AI song creation, AI background music, AI royalty-free music, AI audio composition">
+    <h3 class="stack-title">AI Background Music Generator</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://soundraw.io/" target="_blank">Soundraw</a>,  
+        <a href="https://aiva.ai/" target="_blank">AIVA</a>,  
+        <a href="https://www.ampermusic.com/" target="_blank">Amper Music</a>  
+        <span id="extra-music-tools" class="extra-tools" style="display: none;">
+            , <a href="https://boomy.com/" target="_blank">Boomy</a>,  
+            <a href="https://mubert.com/" target="_blank">Mubert</a>,  
+            <a href="https://ecrettmusic.com/" target="_blank">Ecrett Music</a>,  
+            <a href="https://beatoven.ai/" target="_blank">Beatoven.ai</a>
+        </span>
+    </p>
+    <span id="btn-extra-music-tools" class="see-more" onclick="toggleTools('extra-music-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> AI-generated background music and sound effects.</p>
+</div>
+
+<!-- AI Sales Email Optimization -->
+<div class="stack-box" data-keywords="AI email marketing, AI sales email, AI email conversion, AI lead nurturing, AI cold outreach, AI automated emails, AI email copy">
+    <h3 class="stack-title">AI Sales Email Optimization</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.lemlist.com/" target="_blank">Lemlist</a>,  
+        <a href="https://www.smartlead.ai/" target="_blank">Smartlead AI</a>,  
+        <a href="https://www.mailshake.com/" target="_blank">Mailshake</a>  
+        <span id="extra-sales-email-tools" class="extra-tools" style="display: none;">
+            , <a href="https://woodpecker.co/" target="_blank">Woodpecker</a>,  
+            <a href="https://instantly.ai/" target="_blank">Instantly AI</a>,  
+            <a href="https://closerscopy.com/" target="_blank">ClosersCopy</a>,  
+            <a href="https://reply.io/" target="_blank">Reply.io</a>
+        </span>
+    </p>
+    <span id="btn-extra-sales-email-tools" class="see-more" onclick="toggleTools('extra-sales-email-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> AI-driven email deliverability and automation.</p>
+</div>
+
+<!-- AI Logo Generator -->
+<div class="stack-box" data-keywords="AI branding, AI logo design, AI business identity, AI brand builder, AI graphic design, AI creative tools, AI logo automation">
+    <h3 class="stack-title">AI Logo Generator</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://looka.com/" target="_blank">Looka</a>,  
+        <a href="https://www.brandmark.io/" target="_blank">Brandmark</a>,  
+        <a href="https://www.logomaker.com/" target="_blank">LogoMaker</a>  
+        <span id="extra-logo-tools" class="extra-tools" style="display: none;">
+            , <a href="https://hatchful.shopify.com/" target="_blank">Hatchful</a>,  
+            <a href="https://www.tailorbrands.com/" target="_blank">Tailor Brands</a>,  
+            <a href="https://designhill.com/logo-maker" target="_blank">Designhill</a>,  
+            <a href="https://www.fiverr.com/categories/logo-design" target="_blank">Fiverr Logo Designers</a>
+        </span>
+    </p>
+    <span id="btn-extra-logo-tools" class="see-more" onclick="toggleTools('extra-logo-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> AI-based logo design and branding.</p>
+</div>
+
+<!-- AI SEO Optimization -->
+<div class="stack-box" data-keywords="AI SEO optimization, AI content ranking, AI website traffic, AI search engine ranking, AI marketing optimization, AI blog ranking">
+    <h3 class="stack-title">AI SEO Optimization</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.surferseo.com/" target="_blank">Surfer SEO</a>,  
+        <a href="https://neuronwriter.com/" target="_blank">NeuronWriter</a>,  
+        <a href="https://www.semrush.com/" target="_blank">SEMrush AI</a>  
+        <span id="extra-seo-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.rytr.me/" target="_blank">Rytr</a>,  
+            <a href="https://www.jasper.ai/" target="_blank">Jasper AI</a>,  
+            <a href="https://www.frase.io/" target="_blank">Frase</a>,  
+            <a href="https://growthbarseo.com/" target="_blank">GrowthBar</a>
+        </span>
+    </p>
+    <span id="btn-extra-seo-tools" class="see-more" onclick="toggleTools('extra-seo-tools')">See More</span>
+    <br>
+    <p><strong>Function:</strong> AI-powered content optimization for SEO.</p>
+</div>
+
+<!-- AI Voice Cloner -->
 <div class="stack-box" data-keywords="AI voice cloning, AI speech synthesis, AI voice changer, text to speech AI, deepfake voice AI, AI voice mimic">
     <h3 class="stack-title">AI Voice Cloner</h3>
-    <p><strong>Tool:</strong> <a href="https://www.respeecher.com/" target="_blank">Respeecher</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.respeecher.com/" target="_blank">Respeecher</a>,  
+        <a href="https://www.elevenlabs.io/" target="_blank">Eleven Labs</a>,  
+        <a href="https://www.voicemaker.in/" target="_blank">Voicemaker</a>  
+        <span id="extra-voice-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.fakeyou.com/" target="_blank">FakeYou</a>,  
+            <a href="https://www.lovo.ai/" target="_blank">LOVO AI</a>,  
+            <a href="https://www.iwantcheats.net/ai-voice-changer/" target="_blank">AI Voice Changer</a>,  
+            <a href="https://play.ht/" target="_blank">Play.ht</a>
+        </span>
+    </p>
+    <span id="btn-extra-voice-tools" class="see-more" onclick="toggleTools('extra-voice-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> Clone voices with AI in real-time.</p>
-</div>
+</div>        
 
-<div class="stack-box" data-keywords="AI face swap, AI deepfake, AI face replacement, AI video face changer, AI image manipulation, AI photo editor">
-    <h3 class="stack-title">AI Face Swap Tool</h3>
-    <p><strong>Tool:</strong> <a href="https://faceswap.dev/" target="_blank">Faceswap</a></p>
-    <p><strong>Function:</strong> AI-powered face-swapping for videos & images.</p>
-</div>
-
-<div class="stack-box" data-keywords="AI legal assistant, AI contract review, AI law research, AI case law, AI legal automation, AI lawyer assistant">
-    <h3 class="stack-title">AI Legal Research Assistant</h3>
-    <p><strong>Tool:</strong> <a href="https://www.caseguard.com/" target="_blank">CaseGuard</a></p>
-    <p><strong>Function:</strong> AI-powered legal document review and research.</p>
-</div>
-
+<!-- AI Document Scanner -->
 <div class="stack-box" data-keywords="AI document scanner, AI text extractor, AI OCR tool, AI handwriting recognition, AI PDF text reader">
     <h3 class="stack-title">AI Document Scanner</h3>
-    <p><strong>Tool:</strong> <a href="https://www.abbyy.com/" target="_blank">ABBYY</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.abbyy.com/" target="_blank">ABBYY</a>,  
+        <a href="https://www.camscanner.com/" target="_blank">CamScanner</a>,  
+        <a href="https://www.adobe.com/acrobat/mobile/scanner-app.html" target="_blank">Adobe Scan</a>  
+        <span id="extra-scanner-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.textfairyapp.com/" target="_blank">Text Fairy</a>,  
+            <a href="https://www.microsoft.com/en-us/microsoft-lens" target="_blank">Microsoft Lens</a>
+        </span>
+    </p>
+    <span id="btn-extra-scanner-tools" class="see-more" onclick="toggleTools('extra-scanner-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> Extracts text from scanned documents using AI.</p>
 </div>
 
+<!-- AI Meeting Transcription -->
 <div class="stack-box" data-keywords="AI transcription, speech to text AI, AI note taker, AI meeting transcriber, AI voice notes, AI text conversion">
     <h3 class="stack-title">AI Meeting Transcription</h3>
-    <p><strong>Tool:</strong> <a href="https://otter.ai/" target="_blank">Otter AI</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://otter.ai/" target="_blank">Otter AI</a>,  
+        <a href="https://www.rev.com/" target="_blank">Rev</a>,  
+        <a href="https://sonix.ai/" target="_blank">Sonix</a>  
+        <span id="extra-transcription-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.temi.com/" target="_blank">Temi</a>,  
+            <a href="https://www.amberscript.com/" target="_blank">AmberScript</a>
+        </span>
+    </p>
+    <span id="btn-extra-transcription-tools" class="see-more" onclick="toggleTools('extra-transcription-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-powered transcription for meetings and voice notes.</p>
 </div>
 
+<!-- AI Social Media Planner -->
 <div class="stack-box" data-keywords="AI social media automation, AI Instagram scheduler, AI Twitter posts, AI content planning, AI post automation">
     <h3 class="stack-title">AI Social Media Planner</h3>
-    <p><strong>Tool:</strong> <a href="https://www.ocoya.com/" target="_blank">Ocoya</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.ocoya.com/" target="_blank">Ocoya</a>,  
+        <a href="https://publer.io/" target="_blank">Publer</a>,  
+        <a href="https://www.socialbee.io/" target="_blank">SocialBee</a>  
+        <span id="extra-social-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.buffer.com/" target="_blank">Buffer</a>,  
+            <a href="https://www.hootsuite.com/" target="_blank">Hootsuite</a>
+        </span>
+    </p>
+    <span id="btn-extra-social-tools" class="see-more" onclick="toggleTools('extra-social-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI automates social media content and scheduling.</p>
 </div>
 
+<!-- AI Meme Generator -->
 <div class="stack-box" data-keywords="AI meme generator, AI meme creator, AI viral content, AI funny images, AI social media fun, AI automatic memes">
     <h3 class="stack-title">AI Meme Generator</h3>
-    <p><strong>Tool:</strong> <a href="https://supermeme.ai/" target="_blank">Supermeme</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://supermeme.ai/" target="_blank">Supermeme</a>,  
+        <a href="https://imgflip.com/memegenerator" target="_blank">Imgflip</a>,  
+        <a href="https://www.kapwing.com/meme-maker" target="_blank">Kapwing Meme Maker</a>  
+        <span id="extra-meme-tools" class="extra-tools" style="display: none;">
+            , <a href="https://makeameme.org/" target="_blank">Make a Meme</a>,  
+            <a href="https://mematicapp.com/" target="_blank">Mematic</a>
+        </span>
+    </p>
+    <span id="btn-extra-meme-tools" class="see-more" onclick="toggleTools('extra-meme-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-generated meme creation for social media.</p>
 </div>
 
+<!-- AI Stock Market Predictor -->
 <div class="stack-box" data-keywords="AI financial analysis, AI stock market tool, AI investment tool, AI trading assistant, AI stock predictions">
     <h3 class="stack-title">AI Stock Market Predictor</h3>
-    <p><strong>Tool:</strong> <a href="https://www.trendspider.com/" target="_blank">TrendSpider</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.trendspider.com/" target="_blank">TrendSpider</a>,  
+        <a href="https://www.tickeron.com/" target="_blank">Tickeron</a>,  
+        <a href="https://www.kavout.com/" target="_blank">Kavout</a>  
+        <span id="extra-stock-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.tradeideas.com/" target="_blank">Trade Ideas</a>,  
+            <a href="https://www.algoriz.com/" target="_blank">Algoriz</a>
+        </span>
+    </p>
+    <span id="btn-extra-stock-tools" class="see-more" onclick="toggleTools('extra-stock-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-powered market analysis and stock prediction.</p>
 </div>
 
-<div class="stack-box" data-keywords="AI AI character animation, AI motion graphics, AI 3D animation, AI cartoon generator, AI animated video maker">
+<!-- AI Animation Creator -->
+<div class="stack-box" data-keywords="AI character animation, AI motion graphics, AI 3D animation, AI cartoon generator, AI animated video maker">
     <h3 class="stack-title">AI Animation Creator</h3>
-    <p><strong>Tool:</strong> <a href="https://www.animatron.com/" target="_blank">Animatron</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.animatron.com/" target="_blank">Animatron</a>,  
+        <a href="https://www.renderforest.com/" target="_blank">Renderforest</a>,  
+        <a href="https://www.vyond.com/" target="_blank">Vyond</a>  
+        <span id="extra-animation-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.muvizu.com/" target="_blank">Muvizu</a>,  
+            <a href="https://www.animaker.com/" target="_blank">Animaker</a>
+        </span>
+    </p>
+    <span id="btn-extra-animation-tools" class="see-more" onclick="toggleTools('extra-animation-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-powered animated video and motion graphics creation.</p>
 </div>
 
+<!-- AI Essay Writer -->
 <div class="stack-box" data-keywords="AI essay writer, AI academic writing, AI homework assistant, AI paper writing, AI student tool">
     <h3 class="stack-title">AI Essay Writer</h3>
-    <p><strong>Tool:</strong> <a href="https://www.essaybot.com/" target="_blank">EssayBot</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.essaybot.com/" target="_blank">EssayBot</a>,  
+        <a href="https://www.scribbr.com/" target="_blank">Scribbr</a>,  
+        <a href="https://www.grammarly.com/" target="_blank">Grammarly</a>  
+        <span id="extra-essay-tools" class="extra-tools" style="display: none;">
+            , <a href="https://quillbot.com/" target="_blank">Quillbot</a>,  
+            <a href="https://www.papersowl.com/" target="_blank">PapersOwl</a>
+        </span>
+    </p>
+    <span id="btn-extra-essay-tools" class="see-more" onclick="toggleTools('extra-essay-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-generated academic writing and essay assistance.</p>
 </div>
 
+<!-- AI Book Summarizer -->
 <div class="stack-box" data-keywords="AI book summary, AI reading assistant, AI literature analysis, AI research summary, AI knowledge extraction">
     <h3 class="stack-title">AI Book Summarizer</h3>
-    <p><strong>Tool:</strong> <a href="https://www.blinkist.com/" target="_blank">Blinkist</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.blinkist.com/" target="_blank">Blinkist</a>,  
+        <a href="https://www.shortform.com/" target="_blank">Shortform</a>,  
+        <a href="https://getflashnotes.com/" target="_blank">FlashNotes</a>  
+        <span id="extra-summary-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.readitfor.me/" target="_blank">Readitfor.me</a>,  
+            <a href="https://www.fastrbooks.com/" target="_blank">FastrBooks</a>
+        </span>
+    </p>
+    <span id="btn-extra-summary-tools" class="see-more" onclick="toggleTools('extra-summary-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-generated book summaries for quick learning.</p>
 </div>
 
+<!-- AI Productivity Assistant -->
 <div class="stack-box" data-keywords="AI productivity, AI personal assistant, AI task manager, AI workflow automation, AI smart reminders">
     <h3 class="stack-title">AI Productivity Assistant</h3>
-    <p><strong>Tool:</strong> <a href="https://www.motion.com/" target="_blank">Motion</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.motion.com/" target="_blank">Motion</a>,  
+        <a href="https://reclaim.ai/" target="_blank">Reclaim AI</a>,  
+        <a href="https://www.clickup.com/" target="_blank">ClickUp</a>  
+        <span id="extra-productivity-tools" class="extra-tools" style="display: none;">
+            , <a href="https://todoist.com/" target="_blank">Todoist</a>,  
+            <a href="https://www.notion.so/" target="_blank">Notion AI</a>
+        </span>
+    </p>
+    <span id="btn-extra-productivity-tools" class="see-more" onclick="toggleTools('extra-productivity-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-powered task automation and workflow optimization.</p>
 </div>
+
 <!-- AI Code Debugging Tool -->
 <div class="stack-box" data-keywords="AI code debugger, AI programming assistant, AI bug fixing, AI software optimization, AI development tools, AI auto debug">
     <h3 class="stack-title">AI Code Debugging Tool</h3>
-    <p><strong>Tool:</strong> <a href="https://sourcery.ai/" target="_blank">Sourcery AI</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://sourcery.ai/" target="_blank">Sourcery AI</a>,  
+        <a href="https://www.deepcode.ai/" target="_blank">DeepCode</a>,  
+        <a href="https://copilot.github.com/" target="_blank">GitHub Copilot</a>  
+        <span id="extra-debugging-tools" class="extra-tools" style="display: none;">
+            , <a href="https://kite.com/" target="_blank">Kite AI</a>,  
+            <a href="https://codewhisperer.dev/" target="_blank">CodeWhisperer</a>
+        </span>
+    </p>
+    <span id="btn-extra-debugging-tools" class="see-more" onclick="toggleTools('extra-debugging-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> Automatically fixes and optimizes your code using AI.</p>
 </div>
 
 <!-- AI Landing Page Builder -->
+<!-- AI Landing Page Builder -->
 <div class="stack-box" data-keywords="AI landing page, AI website builder, AI page creator, AI conversion optimization, AI digital marketing, AI web design">
     <h3 class="stack-title">AI Landing Page Builder</h3>
-    <p><strong>Tool:</strong> <a href="https://www.unbounce.com/" target="_blank">Unbounce</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.unbounce.com/" target="_blank">Unbounce</a>,  
+        <a href="https://www.carrd.co/" target="_blank">Carrd</a>,  
+        <a href="https://www.webflow.com/" target="_blank">Webflow</a>  
+        <span id="extra-landing-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.instapage.com/" target="_blank">Instapage</a>,  
+            <a href="https://www.getresponse.com/" target="_blank">GetResponse</a>
+        </span>
+    </p>
+    <span id="btn-extra-landing-tools" class="see-more" onclick="toggleTools('extra-landing-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-powered landing page creation and optimization.</p>
 </div>
 
 <!-- AI Presentation Enhancer -->
 <div class="stack-box" data-keywords="AI presentations, AI slide design, AI PowerPoint, AI visual storytelling, AI business tools, AI pitch deck">
     <h3 class="stack-title">AI Presentation Enhancer</h3>
-    <p><strong>Tool:</strong> <a href="https://www.beautiful.ai/" target="_blank">Beautiful AI</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.beautiful.ai/" target="_blank">Beautiful AI</a>,  
+        <a href="https://www.canva.com/" target="_blank">Canva</a>,  
+        <a href="https://prezi.com/" target="_blank">Prezi</a>  
+        <span id="extra-presentation-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.visme.co/" target="_blank">Visme</a>,  
+            <a href="https://www.slidebean.com/" target="_blank">Slidebean</a>
+        </span>
+    </p>
+    <span id="btn-extra-presentation-tools" class="see-more" onclick="toggleTools('extra-presentation-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-generated professional slides and presentations.</p>
 </div>
 
 <!-- AI LinkedIn Post Generator -->
 <div class="stack-box" data-keywords="AI LinkedIn content, AI social media post, AI professional networking, AI career growth, AI personal branding">
     <h3 class="stack-title">AI LinkedIn Post Generator</h3>
-    <p><strong>Tool:</strong> <a href="https://www.taplio.com/" target="_blank">Taplio</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.taplio.com/" target="_blank">Taplio</a>,  
+        <a href="https://hypefury.com/" target="_blank">Hypefury</a>,  
+        <a href="https://www.postplanner.com/" target="_blank">PostPlanner</a>  
+        <span id="extra-linkedin-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.buffer.com/" target="_blank">Buffer</a>,  
+            <a href="https://www.later.com/" target="_blank">Later</a>
+        </span>
+    </p>
+    <span id="btn-extra-linkedin-tools" class="see-more" onclick="toggleTools('extra-linkedin-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-generated LinkedIn posts for engagement and branding.</p>
 </div>
 
 <!-- AI Copywriting for E-commerce -->
 <div class="stack-box" data-keywords="AI eCommerce copy, AI product descriptions, AI sales page, AI store optimization, AI dropshipping, AI Shopify tools">
     <h3 class="stack-title">AI Copywriting for E-commerce</h3>
-    <p><strong>Tool:</strong> <a href="https://www.neuroflash.com/" target="_blank">Neuroflash</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.neuroflash.com/" target="_blank">Neuroflash</a>,  
+        <a href="https://www.jasper.ai/" target="_blank">Jasper AI</a>,  
+        <a href="https://www.copy.ai/" target="_blank">Copy.ai</a>  
+        <span id="extra-copywriting-tools" class="extra-tools" style="display: none;">
+            , <a href="https://writesonic.com/" target="_blank">Writesonic</a>,  
+            <a href="https://www.rytr.me/" target="_blank">Rytr</a>
+        </span>
+    </p>
+    <span id="btn-extra-copywriting-tools" class="see-more" onclick="toggleTools('extra-copywriting-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-powered product descriptions and eCommerce copywriting.</p>
 </div>
 
 <!-- AI Automatic Subtitle Generator -->
 <div class="stack-box" data-keywords="AI subtitles, AI caption generator, AI video captions, AI automated transcription, AI content accessibility">
     <h3 class="stack-title">AI Automatic Subtitle Generator</h3>
-    <p><strong>Tool:</strong> <a href="https://www.subly.io/" target="_blank">Subly</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.subly.io/" target="_blank">Subly</a>,  
+        <a href="https://www.veed.io/" target="_blank">Veed.io</a>,  
+        <a href="https://www.descript.com/" target="_blank">Descript</a>  
+        <span id="extra-subtitle-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.rev.com/" target="_blank">Rev</a>,  
+            <a href="https://www.kapwing.com/" target="_blank">Kapwing</a>
+        </span>
+    </p>
+    <span id="btn-extra-subtitle-tools" class="see-more" onclick="toggleTools('extra-subtitle-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> Automatically generates subtitles for videos using AI.</p>
 </div>
 
 <!-- AI Customer Support Chatbot -->
+<!-- AI Customer Support Chatbot -->
 <div class="stack-box" data-keywords="AI customer support, AI chatbot, AI helpdesk, AI virtual assistant, AI automated responses, AI service automation">
     <h3 class="stack-title">AI Customer Support Chatbot</h3>
-    <p><strong>Tool:</strong> <a href="https://www.drift.com/" target="_blank">Drift</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.drift.com/" target="_blank">Drift</a>,  
+        <a href="https://www.intercom.com/" target="_blank">Intercom</a>,  
+        <a href="https://www.zendesk.com/" target="_blank">Zendesk</a>  
+        <span id="extra-chatbot-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.tidio.com/" target="_blank">Tidio</a>,  
+            <a href="https://www.freshchat.com/" target="_blank">Freshchat</a>
+        </span>
+    </p>
+    <span id="btn-extra-chatbot-tools" class="see-more" onclick="toggleTools('extra-chatbot-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI chatbot for real-time customer support automation.</p>
 </div>
 
 <!-- AI Paraphrasing Tool -->
 <div class="stack-box" data-keywords="AI paraphrasing, AI text rewriting, AI sentence rewording, AI content improvement, AI plagiarism checker">
     <h3 class="stack-title">AI Paraphrasing Tool</h3>
-    <p><strong>Tool:</strong> <a href="https://quillbot.com/" target="_blank">Quillbot</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://quillbot.com/" target="_blank">Quillbot</a>,  
+        <a href="https://www.grammarly.com/" target="_blank">Grammarly</a>,  
+        <a href="https://www.paraphraser.io/" target="_blank">Paraphraser.io</a>  
+        <span id="extra-paraphrasing-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.wordtune.com/" target="_blank">Wordtune</a>,  
+            <a href="https://www.spinbot.com/" target="_blank">Spinbot</a>
+        </span>
+    </p>
+    <span id="btn-extra-paraphrasing-tools" class="see-more" onclick="toggleTools('extra-paraphrasing-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI-powered text rewriting and content improvement.</p>
 </div>
 
 <!-- AI Image Background Remover -->
 <div class="stack-box" data-keywords="AI background remover, AI image editor, AI photo manipulation, AI transparent images, AI graphic design">
     <h3 class="stack-title">AI Image Background Remover</h3>
-    <p><strong>Tool:</strong> <a href="https://www.remove.bg/" target="_blank">Remove.bg</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.remove.bg/" target="_blank">Remove.bg</a>,  
+        <a href="https://www.slazzer.com/" target="_blank">Slazzer</a>,  
+        <a href="https://www.adobe.com/sensei.html" target="_blank">Adobe Sensei</a>  
+        <span id="extra-bgremover-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.fotor.com/" target="_blank">Fotor</a>,  
+            <a href="https://www.photoroom.com/" target="_blank">Photoroom</a>
+        </span>
+    </p>
+    <span id="btn-extra-bgremover-tools" class="see-more" onclick="toggleTools('extra-bgremover-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> Instantly removes image backgrounds using AI.</p>
 </div>
 
 <!-- AI Text Summarizer -->
 <div class="stack-box" data-keywords="AI summarization, AI text simplification, AI key points extractor, AI document summarizer, AI reading assistant">
     <h3 class="stack-title">AI Text Summarizer</h3>
-    <p><strong>Tool:</strong> <a href="https://smmry.com/" target="_blank">SMMRY</a></p>
+    <p><strong>Tools:</strong>  
+        <a href="https://smmry.com/" target="_blank">SMMRY</a>,  
+        <a href="https://www.summarizebot.com/" target="_blank">SummarizeBot</a>,  
+        <a href="https://www.resoomer.com/" target="_blank">Resoomer</a>  
+        <span id="extra-summarizer-tools" class="extra-tools" style="display: none;">
+            , <a href="https://www.tldrthis.com/" target="_blank">TLDRthis</a>,  
+            <a href="https://www.intellippt.com/" target="_blank">IntelliPPT</a>
+        </span>
+    </p>
+    <span id="btn-extra-summarizer-tools" class="see-more" onclick="toggleTools('extra-summarizer-tools')">See More</span>
+    <br>
     <p><strong>Function:</strong> AI extracts key points and summarizes long texts.</p>
+</div>
+<!-- AI Thumbnail Generator -->
+<div class="stack-box" data-keywords="AI thumbnail generator, AI YouTube thumbnail, AI video preview, AI graphic design, AI image enhancement">
+    <h3 class="stack-title">AI Thumbnail Generator</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.canva.com/" target="_blank">Canva AI</a>,  
+        <a href="https://snappa.com/" target="_blank">Snappa</a>  
+    </p><br> 
+    <p><strong>Function:</strong> AI-powered thumbnail creation optimized for YouTube and social media.</p>
+</div>
+
+<!-- AI Conversion Rate Optimizer -->
+<div class="stack-box" data-keywords="AI conversion optimization, AI CRO, AI sales funnel, AI website performance, AI A/B testing">
+    <h3 class="stack-title">AI Conversion Rate Optimizer</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.convert.com/" target="_blank">Convert.com</a>,  
+        <a href="https://vwo.com/" target="_blank">VWO</a>  
+    </p><br>
+    <p><strong>Function:</strong> AI-powered A/B testing and conversion optimization for websites.</p>
+</div>
+
+<!-- AI Podcast Generator -->
+<div class="stack-box" data-keywords="AI podcast generator, AI voice synthesis, AI audio content, AI podcast scripting, AI media creation">
+    <h3 class="stack-title">AI Podcast Generator</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.listnr.tech/" target="_blank">Listnr</a>,  
+        <a href="https://www.resemble.ai/" target="_blank">Resemble AI</a>  
+    </p><br>
+    <p><strong>Function:</strong> AI-generated podcast creation with automated voice synthesis.</p>
+</div>
+
+<!-- AI Pricing Strategy Tool -->
+<div class="stack-box" data-keywords="AI pricing tool, AI revenue optimization, AI eCommerce pricing, AI dynamic pricing, AI market analysis">
+    <h3 class="stack-title">AI Pricing Strategy Tool</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.prisync.com/" target="_blank">Prisync</a>,  
+        <a href="https://www.pricefx.com/" target="_blank">Pricefx</a>  
+    </p><br>
+    <p><strong>Function:</strong> AI-driven dynamic pricing and competitor analysis for businesses.</p>
+</div>
+
+<!-- AI Domain Name Generator -->
+<div class="stack-box" data-keywords="AI domain name, AI brand name generator, AI startup naming, AI business name, AI website naming">
+    <h3 class="stack-title">AI Domain Name Generator</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://namelix.com/" target="_blank">Namelix</a>,  
+        <a href="https://businessnamegenerator.com/" target="_blank">BNG</a>  
+    </p><br>
+    <p><strong>Function:</strong> AI-powered brand and domain name generator for businesses.</p>
+</div>
+<!-- AI Recipe Generator -->
+<div class="stack-box" data-keywords="AI recipe generator, AI cooking assistant, AI meal planner, AI food suggestions, AI dietary assistant">
+    <h3 class="stack-title">AI Recipe Generator</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.spoonacular.com/" target="_blank">Spoonacular</a>,  
+        <a href="https://whisk.com/" target="_blank">Whisk</a>  
+    </p><br>
+    <p><strong>Function:</strong> AI-powered meal planning, recipe suggestions, and ingredient-based dish recommendations.</p>
+</div>
+
+<!-- AI Interior Design Tool -->
+<div class="stack-box" data-keywords="AI interior design, AI room planner, AI home decor, AI architecture, AI space planning">
+    <h3 class="stack-title">AI Interior Design Tool</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.roomstyler.com/" target="_blank">Roomstyler</a>,  
+        <a href="https://www.homestyler.com/" target="_blank">Homestyler</a>  
+    </p><br>
+    <p><strong>Function:</strong> AI-generated interior design, 3D room planning, and home decor suggestions.</p>
+</div>
+
+<!-- AI Medical Diagnosis Assistant -->
+<div class="stack-box" data-keywords="AI medical diagnosis, AI health assistant, AI symptom checker, AI disease detection, AI healthcare AI">
+    <h3 class="stack-title">AI Medical Diagnosis Assistant</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.babylonhealth.com/" target="_blank">Babylon Health</a>,  
+        <a href="https://www.isabelhealthcare.com/" target="_blank">Isabel Symptom Checker</a>  
+    </p><br>
+    <p><strong>Function:</strong> AI-powered health assessment, symptom analysis, and preliminary medical diagnosis.</p>
+</div>
+
+<!-- AI Language Translation Tool -->
+<div class="stack-box" data-keywords="AI language translation, AI multilingual assistant, AI speech translation, AI text translation, AI global communication">
+    <h3 class="stack-title">AI Language Translation Tool</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://translate.google.com/" target="_blank">Google Translate</a>,  
+        <a href="https://www.deepl.com/" target="_blank">DeepL</a>  
+    </p><br>
+    <p><strong>Function:</strong> AI-driven text and speech translation across multiple languages.</p>
+</div>
+
+<!-- AI Legal Document Analysis -->
+<div class="stack-box" data-keywords="AI legal analysis, AI contract review, AI compliance check, AI law assistant, AI legal tech">
+    <h3 class="stack-title">AI Legal Document Analysis</h3>
+    <p><strong>Tools:</strong>  
+        <a href="https://www.evisort.com/" target="_blank">Evisort</a>,  
+        <a href="https://www.kira.com/" target="_blank">Kira Systems</a>  
+    </p><br>
+    <p><strong>Function:</strong> AI-powered legal document review, contract analysis, and compliance verification.</p>
 </div>
     </section>
 </section>
@@ -1164,6 +1631,70 @@ Output format:
             </div>
             <button class="copy-btn" onclick="copyPrompt('prompt-confidence')">Copy</button>
         </div>
+        <div class="stack-box" data-keywords="AI wealth strategy, financial intelligence, economic hacks, billionaire mindset">
+    <h3 class="stack-title">Billionaire Cheat Codes</h3>
+    <p><strong>Function:</strong> Reveals hidden financial strategies used by the ultra-rich.</p>
+
+    <br> <!-- Adds space before Prompt heading -->
+
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-1" readonly>If money were a game, what cheat codes would billionaires use?</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-1')">Copy</button>
+</div>
+
+<div class="stack-box" data-keywords="AI wealth secrets, financial traps, money psychology, mindset shift">
+    <h3 class="stack-title">The Lie That Keeps You Broke</h3>
+    <p><strong>Function:</strong> Identifies the most deceptive financial beliefs holding people back.</p>
+
+    <br> <!-- Adds space before Prompt heading -->
+
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-2" readonly>What’s the biggest lie about wealth that keeps people broke?</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-2')">Copy</button>
+</div>
+
+<div class="stack-box" data-keywords="AI wealth systems, elite financial planning, strategy optimization, high-IQ money management">
+    <h3 class="stack-title">1% Thinker’s Wealth Blueprint</h3>
+    <p><strong>Function:</strong> Designs an optimized financial system from the perspective of a top 1% strategist.</p>
+
+    <br> <!-- Adds space before Prompt heading -->
+
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-3" readonly>How would a top 1% thinker design a financial system to maximize wealth?</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-3')">Copy</button>
+</div>
+
+<div class="stack-box" data-keywords="AI money mindset reset, subconscious wealth programming, financial growth, high-performance thinking">
+    <h3 class="stack-title">Rebuilding a Money Mindset</h3>
+    <p><strong>Function:</strong> Resets limiting financial beliefs and installs a growth-focused wealth mindset.</p>
+
+    <br> <!-- Adds space before Prompt heading -->
+
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-4" readonly>If I had to erase my money mindset and rebuild it, what beliefs would I install?</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-4')">Copy</button>
+</div>
+
+<div class="stack-box" data-keywords="AI financial independence, escaping the rat race, system thinking, wealth acceleration">
+    <h3 class="stack-title">Escaping the Money Matrix</h3>
+    <p><strong>Function:</strong> Exposes the hidden financial system trapping most people and provides an escape plan.</p>
+
+    <br> <!-- Adds space before Prompt heading -->
+
+    <p><strong>Prompt:</strong></p>
+    <div class="copy-box">
+        <textarea id="prompt-5" readonly>What’s the ‘money matrix’ everyone’s trapped in, and how do I escape it?</textarea>
+    </div>
+    <button class="copy-btn" onclick="copyPrompt('prompt-5')">Copy</button>
+</div>
     </section>
 </section>
 
@@ -1270,6 +1801,18 @@ function scrollToCategories(event) {
 }
 
 
+function toggleTools(id) {
+        var extraTools = document.getElementById(id);
+        var button = document.getElementById("btn-" + id);
+        
+        if (extraTools.style.display === "none" || extraTools.style.display === "") {
+            extraTools.style.display = "inline";
+            button.textContent = "See Less";
+        } else {
+            extraTools.style.display = "none";
+            button.textContent = "See More";
+        }
+    }
 </script>
 <footer class="footer">
     <p>Made by <strong>Ayush Thakur</strong></p>

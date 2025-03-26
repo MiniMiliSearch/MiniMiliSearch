@@ -354,3 +354,19 @@ body {
 .copy-btn:hover {
     background: #0056b3;
 }
+
+
+
+    .see-more {
+        color: #007BFF;
+        cursor: pointer;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .see-more:hover {
+        text-decoration: underline;
+    }
+    .extra-tools {
+        display: none;
+    }
