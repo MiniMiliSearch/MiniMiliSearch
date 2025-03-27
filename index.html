@@ -1700,111 +1700,90 @@ Output format:
 
 
     <script>
-function searchStacks() {
-    let query = document.getElementById("search-input").value.trim().toLowerCase();
-    
-    // Get the currently visible category
-    let activeCategory = document.querySelector('.category-content:not([style*="display: none"])');
-    if (!activeCategory) {
-        alert("No category is active. Please select a category.");
-        return;
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search-input");
+    const categories = document.querySelectorAll(".category-content");
+    const buttons = document.querySelectorAll(".tab-btn");
+
+    // ✅ Category Switching
+    function showCategory(category) {
+        categories.forEach(section => section.style.display = "none");
+        buttons.forEach(button => button.classList.remove("active"));
+
+        let activeSection = document.getElementById(category);
+        if (activeSection) activeSection.style.display = "block";
+
+        document.querySelector(`.tab-btn[onclick="showCategory('${category}')"]`).classList.add("active");
+
+        // 🔹 Dynamically update CTA button link
+        let ctaButton = document.getElementById("dynamic-cta");
+        ctaButton.href = category === "stacks" ? "#ai-stack" : category === "tools" ? "#tools" : "#prompts";
+
+        searchStacks(); // ✅ Reapply filtering when category changes
     }
 
-    let stacks = activeCategory.querySelectorAll(".stack-box"); // Search only inside active category
-    let found = false;
+    // ✅ Dynamic Search with Hiding/Showing Items
+    function searchStacks() {
+        let query = searchInput.value.trim().toLowerCase();
+        let activeCategory = document.querySelector(".category-content:not([style*='display: none'])");
 
-    if (query === "") {
-        alert("Please enter a search term.");
-        return;
-    }
+        if (!activeCategory) return; // Prevents issues if no category is active
 
-    // 🔹 Step 1: Search for Title Matches First
-    for (let stack of stacks) {
-        let title = stack.querySelector(".stack-title").textContent.toLowerCase();
-        if (title.includes(query)) {
-            highlightAndScroll(stack);
-            return; // ✅ Stops search after finding a title match
+        let stacks = activeCategory.querySelectorAll(".stack-box, .tool-box, .prompt-box");
+        let hasResults = false;
+
+        stacks.forEach(stack => {
+            let title = stack.querySelector(".stack-title")?.textContent.toLowerCase();
+            let keywords = stack.getAttribute("data-keywords")?.toLowerCase() || "";
+            let content = stack.cloneNode(true);
+            
+            content.querySelectorAll("a").forEach(link => link.textContent = ""); // Remove <a> text from content
+            let textContent = content.textContent.toLowerCase();
+
+            if (query === "" || title?.includes(query) || textContent.includes(query) || keywords.includes(query)) {
+                stack.style.display = "block"; // ✅ Show matching items
+                stack.style.opacity = "1";
+                hasResults = true;
+            } else {
+                stack.style.opacity = "0"; // ✅ Hide non-matching items dynamically
+                setTimeout(() => stack.style.display = "none", 200);
+            }
+        });
+
+        // If search is cleared, reset visibility of all items
+        if (query === "") {
+            stacks.forEach(stack => {
+                stack.style.display = "block";
+                stack.style.opacity = "1";
+            });
         }
     }
 
-    // 🔹 Step 2: If No Title Match, Check Keywords & Content
-    for (let stack of stacks) {
-        let content = stack.cloneNode(true);
-        let links = content.querySelectorAll("a");
+    // ✅ Copy Prompt to Clipboard with Feedback
+    function copyPrompt(id) {
+        let textarea = document.getElementById(id);
+        textarea.select();
+        textarea.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(textarea.value);
 
-        // Remove <a> text from content before searching
-        links.forEach(link => link.textContent = "");
-
-        let textContent = content.textContent.toLowerCase();
-        let keywords = stack.getAttribute("data-keywords") ? stack.getAttribute("data-keywords").toLowerCase() : "";
-
-        if (textContent.includes(query) || keywords.includes(query)) {
-            highlightAndScroll(stack);
-            return; // ✅ Stops search after finding a match
-        }
+        let button = textarea.parentElement.nextElementSibling;
+        button.innerText = "Copied!";
+        setTimeout(() => button.innerText = "Copy", 1500);
     }
 
-    // 🔹 Step 3: If No Match Found, Show an Alert
-    alert("No matching result found in the active category.");
-}
-
-function highlightAndScroll(stack) {
-    stack.scrollIntoView({ behavior: "smooth", block: "start" });
-    stack.style.border = "2px solid #007BFF"; 
-    setTimeout(() => stack.style.border = "", 4000);
-}
-
-function showCategory(category) {
-    document.querySelectorAll('.category-content').forEach(section => {
-        section.style.display = 'none';
-    });
-
-    document.querySelectorAll('.tab-btn').forEach(button => {
-        button.classList.remove('active');
-    });
-
-    document.getElementById(category).style.display = 'block';
-    document.querySelector(`.tab-btn[onclick="showCategory('${category}')"]`).classList.add('active');
-
-    // 🔹 Dynamically update the CTA button link
-    let ctaButton = document.getElementById('dynamic-cta');
-    if (category === 'stacks') {
-        ctaButton.href = "#ai-stack";
-    } else if (category === 'tools') {
-        ctaButton.href = "#tools";
-    } else if (category === 'prompts') {
-        ctaButton.href = "#prompts";
+    // ✅ Scroll Smoothly to Categories
+    function scrollToCategories(event) {
+        event.preventDefault();
+        let categorySection = document.querySelector(".category-nav");
+        let offset = -80;
+        window.scrollTo({ top: categorySection.offsetTop + offset, behavior: "smooth" });
     }
-}
-function copyPrompt(id) {
-    let textarea = document.getElementById(id);
-    textarea.select();
-    textarea.setSelectionRange(0, 99999); // For mobile
-    navigator.clipboard.writeText(textarea.value);
 
-    // Temporary feedback
-    let button = textarea.parentElement.nextElementSibling;
-    button.innerText = "Copied!";
-    setTimeout(() => button.innerText = "Copy", 1500);
-}
-
-function scrollToCategories(event) {
-    event.preventDefault(); // Prevent default anchor behavior
-    
-    let categorySection = document.querySelector('.category-nav'); // Target category buttons
-    let offset = -80; // Adjust this value for proper spacing
-    
-    window.scrollTo({
-        top: categorySection.offsetTop + offset,
-        behavior: "smooth"
-    });
-}
-
-
-function toggleTools(id) {
+    // ✅ Show/Hide Extra Tools
+    function toggleTools(id) {
         var extraTools = document.getElementById(id);
         var button = document.getElementById("btn-" + id);
-        
+
         if (extraTools.style.display === "none" || extraTools.style.display === "") {
             extraTools.style.display = "inline";
             button.textContent = "See Less";
@@ -1813,10 +1792,21 @@ function toggleTools(id) {
             button.textContent = "See More";
         }
     }
-    // Automatically set "Individual Tools" as the active category when the page loads
-window.onload = function() {
-    showCategory('tools'); // Change 'tools' to the correct ID of your Individual Tools section
-};
+
+    // ✅ Set "Individual Tools" as Default Active Category
+    window.onload = function () {
+        showCategory("tools");
+    };
+
+    // ✅ Attach Search Functionality to Input Field
+    searchInput.addEventListener("input", searchStacks);
+
+    // Expose functions globally
+    window.showCategory = showCategory;
+    window.copyPrompt = copyPrompt;
+    window.scrollToCategories = scrollToCategories;
+    window.toggleTools = toggleTools;
+});
 </script>
 <footer class="footer">
     <p>Made by <strong>Ayush Thakur</strong></p>
