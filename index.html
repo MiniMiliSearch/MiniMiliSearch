@@ -1813,6 +1813,10 @@ function toggleTools(id) {
             button.textContent = "See More";
         }
     }
+    // Automatically set "Individual Tools" as the active category when the page loads
+window.onload = function() {
+    showCategory('tools'); // Change 'tools' to the correct ID of your Individual Tools section
+};
 </script>
 <footer class="footer">
     <p>Made by <strong>Ayush Thakur</strong></p>
